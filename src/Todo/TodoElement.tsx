@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { ITodoElement } from './types'
-import todoElementstyle from "./todoElementstyle.module.css";
+import todoElementstyle from "../styles/todoElementstyle.module.css";
 import avatarImg from "../assets/Frame 26.svg";
 
 const TodoElement: FC<ITodoElement> = ({ countTodo, email, id, name }) => {
