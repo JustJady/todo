@@ -25,7 +25,7 @@ const Todo = () => {
         getAllTodos().then((todosResponse: TTodo[]) => {
             if (!Array.isArray(todosResponse)) return setIsError(true);
             getAllUsers().then((usersResponse: TUser[]) => {
-
+                if(!Array.isArray(usersResponse)) return setIsError(true);
                 const users: ITodoElement[] = [];
 
                 usersResponse.forEach(user => {
