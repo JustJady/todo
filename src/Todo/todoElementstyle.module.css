@@ -1,0 +1,85 @@
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 20px 0px 20px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.todo__item:last-child {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.todo__item__element {
+    display: flex;
+    gap: 31.5px;
+}
+
+.todo__item__element__number {
+    width: 47px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.todo__item__element__container {
+    display: flex;
+    gap: 16px;
+}
+
+.todo__item__element__avatar {
+
+}
+
+.todo__item__element__userinfo__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__item__element__name {
+    color: #FFF;
+}
+
+.todo__item__element__email {
+    color: #FFF;
+    opacity: .4;
+}
+
+.todo__item__element__count {
+    color: #FFF;
+    width: 168px;
+}
+
+
+@media (max-width: 425px) {
+    
+    .todo__item__element__email {
+        font-size: 10px;
+    }
+
+    .todo__item__element__name {
+        font-size: 12px;
+    }
+
+    .todo__item__element {
+        display: flex;
+        justify-content: space-between;
+        gap: 31.5px;
+    }
+
+    .todo__item__element__container {
+        width: 180px;
+    }
+
+    .todo__item__element__number {
+        width: 40px;
+    }
+    
+}
